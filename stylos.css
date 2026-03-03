@@ -1,0 +1,192 @@
+/* Configuración Base */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000000; /* Color grisáceo de fondo */
+    margin: 0;
+    padding: 30px;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fffdfa; /* Papel ligeramente amarillento */
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(241, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+/* Cabecera Estilo Periódico Antiguo */
+header {
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 30px;
+}
+
+.header-top, .header-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 5px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    margin: 10px 0;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    margin: 5px 0;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+/* Layout de Rejilla */
+.grid-principal {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+}
+
+/* Noticia Principal */
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.cuerpo-texto {
+    column-count: 2; /* Divide el texto en columnas */
+    column-gap: 30px;
+    text-align: justify;
+}
+
+/* Efecto de Imágenes con Significado */
+.foto-con-significado {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #ce0000;
+    cursor: help;
+}
+
+.foto-con-significado img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.capa-significado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(201, 3, 3, 0.85);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    box-sizing: border-box;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Hover: Al pasar el mouse */
+.foto-con-significado:hover img {
+    opacity: 0.4;
+    transform: scale(1.02);
+}
+
+.foto-con-significado:hover .capa-significado {
+    opacity: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+.seccion-corta {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.seccion-corta h3 {
+    font-size: 1rem;
+    background: #000000;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 8px;
+    margin-bottom: 15px;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 800px) {
+    .grid-principal { grid-template-columns: 1fr; }
+    .cuerpo-texto { column-count: 1; }
+    header h1 { font-size: 2.5rem; }
+}
+
+body {
+  background-image: url("imagenes/fondo.jpg");
+  background-size: 100% 600%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.facebook-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #1877F2;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
+
+.facebook-btn i {
+  font-size: 18px;
+}
+
+.facebook-btn:hover {
+  background-color: #145dbf;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
+
+.social-btn i {
+  font-size: 18px;
+}
+
+.social-btn:hover {
+  opacity: 0.85;
+}
+
