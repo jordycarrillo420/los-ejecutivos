@@ -205,29 +205,41 @@ Caquetá: Visitó Florencia para dialogar con líderes sociales y territoriales 
   <i class=""></i> Instagram
 </a>
 
-<audio id="mi audio">
+<audio id="miaudio">
    <source src="musica.mp3/champeta.mp3" type="audio/mp3">
 </audio>
 
-<button class="boton-musica" onclick="document.getElementById('mi audio').play()">
-    Reproducir música
+<button class="boton-musica" onclick="document.getElementById('miaudio').play()">
+🎵 Reproducir música
 </button>
 
 <style>
+
+
+
 .boton-musica{
-    background-color: #c00707;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 13px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+    background: linear-gradient(45deg,#ff00cc,#3333ff,#00ffff);
+    background-size: 300% 300%;
+    color:white;
+    border:none;
+    padding:15px 15px;
+    font-size:20px;
+    border-radius:30px;
+    cursor:pointer;
+    animation: colores 5s infinite;
+    transition:0.3s;
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
 }
 
 .boton-musica:hover{
-    background-color: #ff3300;
-    transform: scale(1.1);
+    transform:scale(1.15) rotate(-2deg);
+    box-shadow:0 0 30px #00ffff;
+}
+
+@keyframes colores{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
 }
 </style>
 
