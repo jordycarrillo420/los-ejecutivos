@@ -139,7 +139,7 @@ h2 {
 
 body {
   background-image: url("imagenes proyecto/fondo.jpg");
-  background-size: 100% 600%;
+  background-size: 100% 900%;
   background-repeat: no-repeat;
   height: 100vh;
   margin: 0;
@@ -189,4 +189,8 @@ body {
 .social-btn:hover {
   opacity: 0.85;
 }
+
+
+
+
 
